@@ -1,0 +1,1233 @@
+
+<!-- Eddy Davila -->
+<!-- Project 3 -->
+<!-- MIU 1305 -- >
+
+<!-- head starts -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Guitar Library</title>
+
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	 <link rel="stylesheet" href="themes/roller5.css" />
+	
+	<link rel="stylesheet" href="css/jqm.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+
+
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+	
+	
+	
+
+
+</head>
+<body>
+
+	<div data-role="page" id="home" data-theme="a">
+
+		<div data-role="content">
+			<div style="text-align: center">
+			<h2><img src="images/logo.png" class="img" alt="Guitar Library"/></h2>
+			</div>
+			<p class="para1" style="text-shadow: none">Add or Find a Guitar</p>
+			<h1><a href="#custform"><img src="images/cta.png" class="mycta" alt="Add Guitar" /></a></h1>
+			<label for="search-mini">Search:</label>
+                          <input type="search" name="search-mini" id="search-mini" value="" data-mini="true" />
+			<p class="para1" style="text-shadow: none">Browse by</p>
+
+		<!-- category section goes here -->	
+		<a href="#clients" data-role="button" data-icon="plus" data-theme="b">Clients</a>
+		<a href="#inventory" data-role="button" data-icon="plus" data-theme="b">Inventory</a>
+		<a href="#guitarname" data-role="button" data-icon="plus" data-theme="b">Brands</a>
+		<a href="#details" data-role="button" data-icon="plus" data-theme="b">Details</a>
+		<a href="#updates" data-role="button" data-icon="plus" data-theme="b">Updates</a>
+
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" class="ui-btn-active" data-icon="plus">Home</a></li>
+						<li><a href="#info" data-icon="plus">Info</a></li>
+						<li><a href="#custform" data-ajax="false" data-icon="plus">Add Guitar</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+
+<!-- clients section goes here -->
+
+	<div data-role="page" id="clients" data-add-back-btn="true" >
+
+			<div data-role="header" data-position="fixed">
+				<div style="text-align: center">	
+			<img src="images/smalllogo.png" class="brand"  alt="Guitar Library"/>
+			</div>
+				<h1>Clients</h1>
+			</div>
+
+			<div data-role="content">
+				<!-- data -->
+				<ul data-role="listview" data-inset="true" data-filter="true">
+					<li>
+						<a href="#aj">	
+							<h3>A - J</h3>
+						</a>	
+					</li>
+					<li>
+						<a href="#kt">	
+							<h3>K - T</h3>
+						</a>	
+					</li>
+					<li>
+						<a href="#uz">	
+							<h3>U - Z</h3>
+						</a>	
+					</li>
+				</ul>
+			</div>
+
+
+			<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="plus">Home</a></li>
+						<li><a href="#info" data-icon="plus">Info</a></li>
+						<li><a href="#custform" data-ajax="false" data-icon="plus">Add Guitar</a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+		
+		
+<!-- client details -->
+		
+		<div data-role="page"  id="aj" data-add-back-btn="true" >
+
+			<div data-role="header" data-position="fixed">
+			<div style="text-align: center">	
+			<img src="images/smalllogo.png" class="brand"  alt="Guitar Library"/>
+			</div>
+			<h1>A - J</h1>
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+
+			<div data-role="content" >
+				<!-- data -->
+			<div class="ui-grid-a" >
+
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-a"><img src="images/pic.png"  width="100" alt="hre" class="img"/>
+					</div></div>
+
+					<div class="ui-block-b"> 
+					<!-- member information -->	
+							<strong>Client:</strong> 	  		<em>Ed Davila</em> <br />
+							<strong>Guitar:</strong> 				<em>Ibanez</em> <br />
+							<strong>Color:</strong> 				<em>Blue</em> <br />
+							<strong>PickUps:</strong> 			<em>EMG</em> <br />
+							<br />
+					</div>
+				</div><!-- /grid-a -->
+				
+				<div class="ui-grid-a" >
+
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-a"><img src="images/pic.png"  width="100" alt="hre" class="img"/>
+					</div></div>
+
+					<div class="ui-block-b"> 
+					<!-- member information -->	
+							<strong>Client:</strong> 	  		<em>Gian Davila</em> <br />
+							<strong>Guitar:</strong> 				<em>B.C. Rich</em> <br />
+							<strong>Color:</strong> 				<em>Black</em> <br />
+							<strong>PickUps:</strong> 			<em>EMG</em> <br />
+							<br />
+					</div>
+				</div><!-- /grid-a -->
+				
+				<div class="ui-grid-a" >
+
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-a"><img src="images/pic.png"  width="100" alt="hre" class="img"/>
+					</div></div>
+
+					<div class="ui-block-b"> 
+					<!-- member information -->	
+							<strong>Client:</strong> 	  		<em>Aida Davila Piedra</em> <br />
+							<strong>Guitar:</strong> 				<em>Angel</em> <br />
+							<strong>Color:</strong> 				<em>Sky Blue</em> <br />
+							<strong>PickUps:</strong> 			<em>EMG</em> <br />
+							<br />
+					</div>
+				</div><!-- /grid-a -->
+				
+				<div class="ui-grid-a" >
+
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-a"><img src="images/pic.png"  width="100" alt="hre" class="img"/>
+					</div></div>
+
+					<div class="ui-block-b"> 
+					<!-- member information -->	
+							<strong>Client:</strong> 	  		<em>Julio Davila</em> <br />
+							<strong>Guitar:</strong> 				<em>Gibson</em> <br />
+							<strong>Color:</strong> 				<em>Red</em> <br />
+							<strong>PickUps:</strong> 			<em>DMustain</em> <br />
+							<br />
+					</div>
+				</div><!-- /grid-a -->
+				
+				<div class="ui-grid-a" >
+
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-a"><img src="images/pic.png"  width="100" alt="hre" class="img"/>
+					</div></div>
+
+					<div class="ui-block-b"> 
+					<!-- member information -->	
+							<strong>Client:</strong> 	  		<em>Marcela Davila</em> <br />
+							<strong>Guitar:</strong> 				<em>Martin Co</em> <br />
+							<strong>Color:</strong> 				<em>Yellow</em> <br />
+							<strong>PickUps:</strong> 			<em>EMG</em> <br />
+							<br />
+					</div>
+				</div><!-- /grid-a -->
+				
+				<div class="ui-grid-a" >
+
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-a"><img src="images/pic.png"  width="100" alt="hre" class="img"/>
+					</div></div>
+
+					<div class="ui-block-b"> 
+					<!-- member information -->	
+							<strong>Client:</strong> 	  		<em>Violet Davila</em> <br />
+							<strong>Guitar:</strong> 				<em>NewAngel</em> <br />
+							<strong>Color:</strong> 				<em>Sky Blue</em> <br />
+							<strong>PickUps:</strong> 			<em>EMG</em> <br />
+							<br />
+					</div>
+				</div><!-- /grid-a -->
+
+			
+
+			</div>
+			
+			<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="plus">Home</a></li>
+						<li><a href="#info" data-icon="plus">Info</a></li>
+						<li><a href="#custform" data-ajax="false" data-icon="plus">Join</a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+<!-- end of client details -->
+
+
+<!-- client section starts -->
+
+
+<div data-role="page" id="kt" data-add-back-btn="true">
+
+			<div data-role="header" data-position="fixed">
+			<div style="text-align: center">	
+			<img src="images/smalllogo.png" class="brand"  alt="Guitar Library"/>
+			</div>
+			<h1>K - T</h1>
+			</div>
+			
+
+			<div data-role="content" >
+				<!-- data -->
+			<div class="ui-grid-a" >
+
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-a"><img src="images/pic.png"  width="100" alt="hre" class="img"/>
+					</div></div>
+
+					<div class="ui-block-b"> 
+					<!-- member information -->	
+							<strong>Client:</strong> 	  		<em>Ed Davila</em> <br />
+							<strong>Guitar:</strong> 				<em>Ibanez</em> <br />
+							<strong>Color:</strong> 				<em>Blue</em> <br />
+							<strong>PickUps:</strong> 			<em>EMG</em> <br />
+							<br />
+					</div>
+				</div><!-- /grid-a -->
+				
+				<div class="ui-grid-a" >
+
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-a"><img src="images/pic.png"  width="100" alt="hre" class="img"/>
+					</div></div>
+
+					<div class="ui-block-b"> 
+					<!-- member information -->	
+							<strong>Client:</strong> 	  		<em>Gian Davila</em> <br />
+							<strong>Guitar:</strong> 				<em>B.C. Rich</em> <br />
+							<strong>Color:</strong> 				<em>Black</em> <br />
+							<strong>PickUps:</strong> 			<em>EMG</em> <br />
+							<br />
+					</div>
+				</div><!-- /grid-a -->
+				
+				<div class="ui-grid-a" >
+
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-a"><img src="images/pic.png"  width="100" alt="hre" class="img"/>
+					</div></div>
+
+					<div class="ui-block-b"> 
+					<!-- member information -->	
+							<strong>Client:</strong> 	  		<em>Aida Davila Piedra</em> <br />
+							<strong>Guitar:</strong> 				<em>Angel</em> <br />
+							<strong>Color:</strong> 				<em>Sky Blue</em> <br />
+							<strong>PickUps:</strong> 			<em>EMG</em> <br />
+							<br />
+					</div>
+				</div><!-- /grid-a -->
+				
+				<div class="ui-grid-a" >
+
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-a"><img src="images/pic.png"  width="100" alt="hre" class="img"/>
+					</div></div>
+
+					<div class="ui-block-b"> 
+					<!-- member information -->	
+							<strong>Client:</strong> 	  		<em>Julio Davila</em> <br />
+							<strong>Guitar:</strong> 				<em>Gibson</em> <br />
+							<strong>Color:</strong> 				<em>Red</em> <br />
+							<strong>PickUps:</strong> 			<em>DMustain</em> <br />
+							<br />
+					</div>
+				</div><!-- /grid-a -->
+				
+				<div class="ui-grid-a" >
+
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-a"><img src="images/pic.png" width="100" alt="hre" class="img"/>
+					</div></div>
+
+					<div class="ui-block-b"> 
+					<!-- member information -->	
+							<strong>Client:</strong> 	  		<em>Marcela Davila</em> <br />
+							<strong>Guitar:</strong> 				<em>Martin Co</em> <br />
+							<strong>Color:</strong> 				<em>Yellow</em> <br />
+							<strong>PickUps:</strong> 			<em>EMG</em> <br />
+							<br />
+					</div>
+				</div><!-- /grid-a -->
+				
+				<div class="ui-grid-a" >
+
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-a"><img src="images/pic.png"  width="100" alt="hre" class="img"/>
+					</div></div>
+
+					<div class="ui-block-b"> 
+					<!-- member information -->	
+							<strong>Client:</strong> 	  		<em>Violet Davila</em> <br />
+							<strong>Guitar:</strong> 				<em>NewAngel</em> <br />
+							<strong>Color:</strong> 				<em>Sky Blue</em> <br />
+							<strong>PickUps:</strong> 			<em>EMG</em> <br />
+							<br />
+					</div>
+				</div><!-- /grid-a -->
+
+			
+
+			</div>
+			
+			<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="plus">Home</a></li>
+						<li><a href="#info" data-icon="plus">Info</a></li>
+						<li><a href="#custform" data-ajax="false" data-icon="plus">Join</a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+		
+<!-- client section ends -->
+		
+<!-- client section starts -->
+		
+		
+		
+		<div data-role="page" id="uz"  data-add-back-btn="true">
+
+			<div data-role="header" data-position="fixed">
+			<div style="text-align: center">	
+			<img src="images/smalllogo.png" class="brand"  alt="Guitar Library"/>
+			</div>
+			<h1>U - Z</h1>
+			</div>
+			
+
+			<div data-role="content" >
+				<!-- data -->
+			<div class="ui-grid-a" >
+
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-a"><img src="images/pic.png"  width="100" alt="hre" class="img"/>
+					</div></div>
+
+					<div class="ui-block-b"> 
+					<!-- member information -->	
+							<strong>Client:</strong> 	  		<em>Ed Davila</em> <br />
+							<strong>Guitar:</strong> 				<em>Ibanez</em> <br />
+							<strong>Color:</strong> 				<em>Blue</em> <br />
+							<strong>PickUps:</strong> 			<em>EMG</em> <br />
+							<br />
+					</div>
+				</div><!-- /grid-a -->
+				
+				<div class="ui-grid-a" >
+
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-a"><img src="images/pic.png"  width="100" alt="hre" class="img"/>
+					</div></div>
+
+					<div class="ui-block-b"> 
+					<!-- member information -->	
+							<strong>Client:</strong> 	  		<em>Gian Davila</em> <br />
+							<strong>Guitar:</strong> 				<em>B.C. Rich</em> <br />
+							<strong>Color:</strong> 				<em>Black</em> <br />
+							<strong>PickUps:</strong> 			<em>EMG</em> <br />
+							<br />
+					</div>
+				</div><!-- /grid-a -->
+				
+				<div class="ui-grid-a" >
+
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-a"><img src="images/pic.png"  width="100" alt="hre" class="img"/>
+					</div></div>
+
+					<div class="ui-block-b"> 
+					<!-- member information -->	
+							<strong>Client:</strong> 	  		<em>Aida Davila Piedra</em> <br />
+							<strong>Guitar:</strong> 				<em>Angel</em> <br />
+							<strong>Color:</strong> 				<em>Sky Blue</em> <br />
+							<strong>PickUps:</strong> 			<em>EMG</em> <br />
+							<br />
+					</div>
+				</div><!-- /grid-a -->
+				
+				<div class="ui-grid-a" >
+
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-a"><img src="images/pic.png"  width="100" alt="hre" class="img"/>
+					</div></div>
+
+					<div class="ui-block-b"> 
+					<!-- member information -->	
+							<strong>Client:</strong> 	  		<em>Julio Davila</em> <br />
+							<strong>Guitar:</strong> 				<em>Gibson</em> <br />
+							<strong>Color:</strong> 				<em>Red</em> <br />
+							<strong>PickUps:</strong> 			<em>DMustain</em> <br />
+							<br />
+					</div>
+				</div><!-- /grid-a -->
+				
+				<div class="ui-grid-a" >
+
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-a"><img src="images/pic.png"  width="100" alt="hre" class="img"/>
+					</div></div>
+
+					<div class="ui-block-b"> 
+					<!-- member information -->	
+							<strong>Client:</strong> 	  		<em>Marcela Davila</em> <br />
+							<strong>Guitar:</strong> 				<em>Martin Co</em> <br />
+							<strong>Color:</strong> 				<em>Yellow</em> <br />
+							<strong>PickUps:</strong> 			<em>EMG</em> <br />
+							<br />
+					</div>
+				</div><!-- /grid-a -->
+				
+				<div class="ui-grid-a" >
+
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-a"><img src="images/pic.png"  width="100" alt="hre" class="img"/>
+					</div></div>
+
+					<div class="ui-block-b"> 
+					<!-- member information -->	
+							<strong>Client:</strong> 	  		<em>Violet Davila</em> <br />
+							<strong>Guitar:</strong> 				<em>NewAngel</em> <br />
+							<strong>Color:</strong> 				<em>Sky Blue</em> <br />
+							<strong>PickUps:</strong> 			<em>EMG</em> <br />
+							<br />
+					</div>
+				</div><!-- /grid-a -->
+
+			
+
+			</div>
+			
+			<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="plus">Home</a></li>
+						<li><a href="#info" data-icon="plus">Info</a></li>
+						<li><a href="#custform" data-ajax="false" data-icon="plus">Join</a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+
+		<!-- Inventory section goes here -->
+
+
+	<div data-role="page" id="inventory" data-add-back-btn="true">
+
+			<div data-role="header" data-position="fixed">
+				<div style="text-align: center">	
+			<img src="images/smalllogo.png" class="brand"  alt="Guitar Library"/>
+			</div>
+							<h1>Inventory</h1>
+			</div>
+
+			<div data-role="content" >
+				
+				<!-- data -->
+				<div class="ui-grid-b">
+					<!-- Inventory grid content images -->
+
+					<div class="ui-block-a"><div class="ui-bar ui-bar-a"><img src="images/gallery/inv1.png" /></div></div>
+					<div class="ui-block-b"><div class="ui-bar ui-bar-a"><img src="images/gallery/inv2.png" /></div></div>
+					<div class="ui-block-c"><div class="ui-bar ui-bar-a"><img src="images/gallery/inv3.png" /></div></div>
+					<div class="ui-block-a"><div class="ui-bar ui-bar-a"><img src="images/gallery/inv4.png" /></div></div>
+					<div class="ui-block-b"><div class="ui-bar ui-bar-a"><img src="images/gallery/inv5.png" /></div></div>
+					<div class="ui-block-c"><div class="ui-bar ui-bar-a"><img src="images/gallery/inv6.png" /></div></div>
+					<div class="ui-block-a"><div class="ui-bar ui-bar-a"><img src="images/gallery/inv7.png" /></div></div>
+					<div class="ui-block-b"><div class="ui-bar ui-bar-a"><img src="images/gallery/inv8.png" /></div></div>
+					<div class="ui-block-c"><div class="ui-bar ui-bar-a"><img src="images/gallery/inv9.png" /></div></div>
+					<div class="ui-block-a"><div class="ui-bar ui-bar-a"><img src="images/gallery/inv10.png" /></div></div>
+					<div class="ui-block-b"><div class="ui-bar ui-bar-a"><img src="images/gallery/inv11.png" /></div></div>
+					<div class="ui-block-c"><div class="ui-bar ui-bar-a"><img src="images/gallery/inv12.png" /></div></div>
+
+			</div>
+				<label for="search-mini">Search Input:</label>
+<input type="search" name="search-mini" id="search-mini" value="" data-mini="true"  />
+			</div>
+
+			<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="plus">Home</a></li>
+						<li><a href="#info" data-icon="plus">Info</a></li>
+						<li><a href="#custform" data-ajax="false" data-icon="plus">Add Guitar</a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+		
+		<!-- client section ends -->
+
+<!-- resources section goes here -->
+
+	<div data-role="page" id="guitarname" data-add-back-btn="true" >
+
+			<div data-role="header" data-position="fixed">
+				<div style="text-align: center">	
+			<img src="images/smalllogo.png" class="brand"  alt="Guitar Library"/>
+			</div>
+				<h1>Guitar Names</h1>
+
+			</div>
+
+			<div data-role="content">
+				<!-- data -->
+				<div data-role="collapsible-set" >
+						<div data-role="collapsible" data-collapsed="true" data-theme="a">
+							<h3>Ibanez</h3>
+							<h1><img src="images/guitarnames/ibanezlogo.png" alt="Ibanez Guitars" class="img"/></h1>
+							<p class="para1" style="text-shadow: none">
+								<strong>Ibanez Guitars</strong><br />
+								East Coast Dealer<br />
+								201-608-3323<br />
+
+								<a href="http://www.guitarcenter.com/" data-role="button" data-theme="b">Website</a>
+							</p>
+						</div>
+
+						<div data-role="collapsible" data-collapsed="true" data-theme="a">
+							<h3>Gibson</h3>
+							<h1><img src="images/guitarnames/gibsonlogo.png" alt="Gibson Guitars" class="img"/></h1>
+							<p class="para1" style="text-shadow: none"><strong>Gibson Guitars</strong><br />
+								East Coast Dealer<br />
+								201-608-3323<br />
+
+								<a href="http://www.guitarcenter.com/" data-role="button" data-theme="b">Website</a>
+							</p>
+							</p>
+						</div>
+
+						<div data-role="collapsible" data-collapsed="true" data-theme="a">
+							<h3>Fender</h3>
+							<h1><img src="images/guitarnames/fenderlogo.png" alt="Fender Guitars" class="img"/></h1>
+							<p class="para1" style="text-shadow: none">
+								<strong>Fender Guitars</strong><br />
+								East Coast Dealer<br />
+								201-608-3323<br />
+
+								<a href="http://www.guitarcenter.com/" data-role="button" data-theme="b">Website</a>
+							</p>
+							</p>
+						</div>
+						<div data-role="collapsible" data-collapsed="true" data-theme="a">
+							<h3>BC Rich</h3>
+							<h1><img src="images/guitarnames/bclogo.png" alt="BC Rich" class="img"/></h1>
+							<p class="para1" style="text-shadow: none">
+								<strong>BC Rich Guitars</strong><br />
+								East Coast Dealer<br />
+								201-608-3323<br />
+
+								<a href="http://www.guitarcenter.com/" data-role="button" data-theme="b">Website</a>
+							</p>
+							</p>
+						</div>
+						<div data-role="collapsible" data-collapsed="true" data-theme="a">
+							<h3>Dean</h3>
+							<h1><img src="images/guitarnames/deanlogo.png" alt="Dean Guitars" class="img"/></h1>
+							<p class="para1" style="text-shadow: none"><strong>Dean Guitars</strong><br />
+								East Coast Dealer<br />
+								201-608-3323<br />
+
+								<a href="http://www.guitarcenter.com/" data-role="button" data-theme="b">Website</a>
+							</p>
+							</p>
+						</div>
+
+						<div data-role="collapsible" data-collapsed="true" data-theme="a">
+							<h3>Jackson</h3>
+							<h1><img src="images/guitarnames/jacksonlogo.png" alt="Jackson Guitars" class="img"/></h1>
+							<p class="para1" style="text-shadow: none">
+								<strong>Jackson Guitars</strong><br />
+								East Coast Dealer<br />
+								201-608-3323<br />
+
+								<a href="http://www.guitarcenter.com/" data-role="button" data-theme="b">Website</a>
+							</p>
+							</p>
+						</div>
+				</div>
+			</div>
+
+			<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="plus">Home</a></li>
+						<li><a href="#info" data-icon="plus">Info</a></li>
+						<li><a href="#custform" data-ajax="false" data-icon="plus">Add Guitar</a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+
+<!-- classifieds section goes here -->
+
+	<div data-role="page" id="details" data-add-back-btn="true"  >
+
+			<div data-role="header" data-position="fixed">
+				<div style="text-align: center">	
+			<img src="images/smalllogo.png" class="brand"  alt="Guitar Library"/>
+			</div>
+				<h1>Details</h1>
+			</div>
+<!-- content goes here --> 
+
+			<div data-role="content">
+				<!-- data -->
+				<ul data-role="listview" data-inset="true" data-filter="true" data-theme="c">
+					<li>
+						<a href="#updates_details">	
+							<img src="images/guitarnames/jacksonlogo.png" />
+							<h3>Jackson Guitars </h3>
+							<p>Jackson Guitars, to confirm merge with Martin Acustics in 2015</p>
+							<p><em>monday, may 13, 2013</em></p>
+						</a>	
+					</li>
+					<li>
+						<a href="#updates_details">	
+							<img src="images/guitarnames/gibsonlogo.png" />
+							<h3>Gibson Guitars</h3>
+							<p>Gibson Guitars will endorse Erick Clapton in the  "CrossRoads Tour"</p>
+							<p><em>Sunday, may 12, 2013</em></p>
+
+						</a>	
+					</li>
+					<li>
+						<a href="#updates_details">	
+							<img src="images/guitarnames/bclogo.png"/>							
+							<h3>BC Rich</h3>
+							<p>Kerry King's custom made Axe Guitar will be for sale this weekend. </p>
+							<p><em>Saturday, may 11, 2013</em></p>
+
+						</a>	
+					</li>
+					<li>
+						<a href="#updates_details">	
+							<img src="images/guitarnames/ibanezlogo.png"/>							
+							<h3>Ibanez </h3>
+							<p>EMG Announces: James Hetfield signature pick ups for sale in August 2013</p>
+							<p><em>Friday, may 10, 2013</em></p>
+
+						</a>	
+					</li>
+				</ul>
+			</div>
+
+			<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="plus">Home</a></li>
+						<li><a href="#info" data-icon="plus">Info</a></li>
+						<li><a href="#custform" data-ajax="false" data-icon="plus">Add Guitar</a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>		
+
+<!-- news section goes here -->
+
+
+	<div data-role="page" id="updates" data-add-back-btn="true" >
+
+			<div data-role="header" data-position="fixed">
+				<div style="text-align: center">	
+			<img src="images/smalllogo.png" class="brand"  alt="Guitar Library"/>
+			</div>
+				<h1>Updates</h1>
+			</div>
+
+			<div data-role="content">
+				<!-- data -->
+				<ul data-role="listview" data-filter="true" data-inset="true" data-theme="c">
+					<li>
+						<a href="#up1">	
+							<img src="images/details/JEM7V.png" class="imgnews"/>
+							<h3>Ibanez JEM7V</h3>
+							<p>Available October 2013.</p>
+							<p>Date: May/05/2013.</p>
+						</a>	
+					</li>
+					<li>
+						<a href="#up2">
+							<img src="images/details/PGM300.png" />
+							<h3>Fender PGM300 </h3>
+							<p>Available September 2013.</p>
+							<p>Date: May/04/2013.</p>
+
+						</a>	
+					</li>
+					<li>
+						<a href="#up3">
+							<img src="images/details/S7320.png"/>							
+							<h3>BC Rich S7320</h3>
+							<p>Available August 2013.</p>
+							<p>Date: May/03/2013.</p>
+
+						</a>	
+					</li>
+		
+
+				</ul>
+			</div>
+<!-- footer starts -->
+			<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="plus">Home</a></li>
+						<li><a href="#info" data-icon="plus">Info</a></li>
+						<li><a href="#custform" data-ajax="false" data-icon="plus">Add Guitar</a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>		
+		
+<!-- update specs starts -->
+
+
+<div data-role="page" id="up1"  repeat;">
+
+			<div data-role="header" data-position="fixed">
+				<div style="text-align: center">	
+			<img src="images/smalllogo.png" class="brand"  alt="Guitar Library"/>
+			</div>
+					<h1>Classifieds</h1>
+
+			</div>
+<!-- content goes here --> 
+
+			<div data-role="content">
+				<!-- data -->	
+							
+							
+
+							<h3>Ibanez JEM7V</h3>
+							<p style="text-shadow: none">
+								<strong>Recent Updates</strong> <br /><br />
+								This guitar has been pulled off the shelves because of bad electronics.  
+			</div>
+				
+				<!-- footer starts -->
+			<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="plus">Home</a></li>
+						<li><a href="#info" data-icon="plus">Info</a></li>
+						<li><a href="#custform" data-ajax="false" data-icon="plus">Add Guitar</a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+<!-- update specs ends here -->
+
+<!-- update specs 1 starts -->
+
+<div data-role="page" id="up2"  repeat;">
+
+			<div data-role="header" data-position="fixed">
+				<div style="text-align: center">	
+			<img src="images/smalllogo.png" class="brand"  alt="Guitar Library"/>
+			</div>
+					<h1>Classifieds</h1>
+
+			</div>
+<!-- content goes here --> 
+
+			<div data-role="content">
+				<!-- data -->	
+							
+							
+
+							<h3>Fender PGM300</h3>
+							<p style="text-shadow: none">
+								<strong>Recent Updates</strong> <br /><br />
+								This guitar has been added to inventory. 
+			</div>
+				
+				<!-- footer starts -->
+			<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="plus">Home</a></li>
+						<li><a href="#info" data-icon="plus">Info</a></li>
+						<li><a href="#custform" data-ajax="false" data-icon="plus">Add Guitar</a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+		
+		<!-- specs 1 ends here -->
+		
+		<div data-role="page" id="up3"  repeat;">
+
+			<div data-role="header" data-position="fixed">
+				<div style="text-align: center">	
+			<img src="images/smalllogo.png" class="brand"  alt="Guitar Library"/>
+			</div>
+					<h1>Classifieds</h1>
+
+			</div>
+<!-- content goes here --> 
+
+			<div data-role="content">
+				<!-- data -->	
+							
+							
+
+							<h3>BC Rich S7320</h3>
+							<p style="text-shadow: none">
+								<strong>Recent Updates</strong> <br /><br />
+								This guitar has been sent for repairs.  
+			</div>
+				
+				<!-- footer starts -->
+			<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="plus">Home</a></li>
+						<li><a href="#info" data-icon="plus">Info</a></li>
+						<li><a href="#custform" data-ajax="false" data-icon="plus">Add Guitar</a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+
+
+<!-- news one window drill down starts here for the news section -->
+
+<div data-role="page" id="updates_details" data-add-back-btn="true" data-theme="a">
+
+			<div data-role="header" data-position="fixed">
+				<div style="text-align: center">	
+			<img src="images/smalllogo.png" class="brand"  alt="Guitar Library"/>
+			</div>
+							<h1>Full Specs</h1>
+
+			</div>
+<!-- content goes here --> 
+
+			<div data-role="content">
+				<!-- data -->	
+					<img src="images/details/specs.png" />
+					<h3>Ibanez JEM7V</h3>
+					<p style="text-shadow: none">Specifications:
+Neck:5pc Maple/Walnut Prestige neck 
+Body:Alder body 
+Fingerboard: Rosewood fingerboard 
+Bridge: Edge bridge 
+Neck pu: DiMarzio Evolution(H) neck pu 
+Mid pu: DiMarzio Evolution(S) mid pu 
+Bridge pu: DiMarzio Evolution(H) bridge pu 
+Hardware color Gold.</p>
+			</div>
+<!-- footer starts -->
+			<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="plus">Home</a></li>
+						<li><a href="#info" data-icon="plus">Info</a></li>
+						<li><a href="#custform" data-ajax="false" data-icon="plus">Add Guitar</a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>				
+
+<!-- info section goes here -->
+
+
+	<div data-role="page" id="info" data-add-back-btn="true"  >
+
+			<div data-role="header" data-position="fixed">
+				<div style="text-align: center">	
+			<img src="images/smalllogo.png" class="brand"  alt="Guitar Library"/>
+			</div>
+				<h1>Info</h1>
+			</div>
+<!-- content goes here --> 
+
+			<div data-role="content">
+
+				<!-- data -->
+				<a href="#credits"data-role="button" data-icon="plus" data-theme="b">Credits</a>
+				<a href="#author" data-role="button" data-icon="plus" data-theme="b">Author Info</a>
+				<a href="http://www.github.com" data-role="button" data-icon="plus" data-theme="b">Bronze App</a>
+				<a href="http://www.github.com" data-role="button" data-icon="plus" data-theme="b">Gold gh-pages</a>
+				<a href="http://www.github.com" data-role="button" data-icon="plus" data-theme="b">Bronze gh-pages</a>
+				<a href="http://www.github.com" data-role="button" data-icon="plus" data-theme="b">GitHub Repository</a>
+		
+			</div>
+			
+<!-- footer starts -->
+			<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="plus">Home</a></li>
+						<li><a href="#info" class="ui-btn-active" data-icon="plus" class="ui-btn-active">Info</a></li>
+						<li><a href="#custform" data-ajax="false" data-icon="plus">Add Guitar</a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+	
+	
+	<div data-role="page" id="credits" data-add-back-btn="true" data-theme="a" >
+
+			<div data-role="header" data-position="fixed">
+				<div style="text-align: center">	
+			<img src="images/smalllogo.png" class="brand"  alt="Guitar Library"/>
+			</div>
+				<h1>Credits</h1>
+			</div>
+<!-- content goes here --> 
+
+			<div data-role="content">
+				<!-- data -->
+				<ul data-role="listview" data-inset="true" data-filter="true" data-theme="c">
+					<li>
+						<a href="http://www.gibson.com">	
+							<h3>Credited Source </h3>
+							<p>Gibson Guitar's Website</p>
+							<p><em>Signature "les Paul" Specifications</em></p>
+						</a>	
+					</li>
+					<li>
+						<a href="http://www.Ibanez.com">	
+							<h3>Credited Source</h3>
+							<p>Ibanez Website</p>
+							<p><em>Hands stained models</em></p>
+						</a>	
+					</li>
+					<li>
+						<a href="http://www.bcrich.com">	
+							<h3>Credited Source</h3>
+							<p>BC Rich Guitars Online</p>
+							<p><em>High-end Mockingbird Models</em></p>
+
+						</a>	
+					</li>
+					<li>
+						<a href="http://www.jacksonguitars.com">	
+							<h3>Credited Source</h3>
+							<p>Jackson Guitars</p>
+							<p><em>Les Paul Specifications Page</em></p>
+
+						</a>		
+					</li>
+				</ul>
+			</div>
+<!-- footer starts -->
+			<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="plus">Home</a></li>
+						<li><a href="#about" data-icon="plus">About</a></li>
+						<li><a href="#custform" data-ajax="false" data-icon="plus">Add Guitar</a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+	
+	
+	<!-- Author Details-->
+	
+	<div data-role="page" id="author" data-add-back-btn="true" data-theme="a" >
+
+			<div data-role="header" data-position="fixed">
+				<div style="text-align: center">	
+			<img src="images/smalllogo.png" class="brand"  alt="Guitar Library"/>
+			</div>
+				<h1>Credits</h1>
+			</div>
+<!-- content goes here --> 
+
+			<div data-role="content">
+				<!-- data -->
+				<ul data-role="listview" data-inset="true" data-filter="true">
+					<li>
+						<a>	
+							<h3>Author Info</h3>
+							<p>Eddy Davila</p>
+							<p><em>MIU student at Full Sail University</em></p>
+						</a>	
+					</li>
+				</ul>
+			</div>
+<!-- footer starts -->
+			<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="plus">Home</a></li>
+						<li><a href="#info" data-icon="plus">Info</a></li>
+						<li><a href="#custform" data-ajax="false" data-icon="plus">Add Guitar</a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>		
+	
+	
+
+<!-- jqm form starts here -->
+<div data-role="page" id="custform" data-add-back-btn="true" >
+
+	<div data-role="header" data-position="fixed">
+		<div style="text-align: center">	
+			<img src="images/smalllogo.png" class="brand"  alt="Guitar Library"/>
+			</div>
+		<h1>Enter Details</h1>
+	</div>
+
+	<div data-role="content">
+
+<!-- form starts here -->
+	<form action="" method="post" id="contactForm">
+
+<!-- input type user must input valid text string for first name -->
+	<div data-role="fieldcontain">
+		<label for="fname">First Name:</label>
+		<input type="text" name="fname" id="fname" placeholder="Ex: Ed" class="required"/>
+	</div>
+
+<!-- input type user must input valid text string for last name -->
+	<div data-role="fieldcontain">
+		<label for="lname">Last Name:</label>
+		<input type="text" name="lname" id="lname" placeholder="Ex: Davila" class="required"/>
+	</div>
+
+<!-- iput type user inputs valid email address -->
+	<div data-role="fieldcontain">
+		<label for="email">Email:</label>
+		<input type="text" name="email" id="email" placeholder="Ex: Eddavila@google.com"  class="required email"/>
+	</div>
+
+<!-- iput type user inputs the date they are joining -->
+	<div data-role="fieldcontain">
+		<label for="date">Today's Date:</label>
+		<input type="text" name="date" id="date" placeholder="05-23-2013"  class="required"/>
+	</div>	
+
+<!-- input type user guitar -->
+	<div data-role="fieldcontain">
+		<label for="guitar">Guitar:</label>
+		<input type="text" name="guitar" id="guitar" placeholder="Ex: Ibanez, Gibson, B.C.Rich, etc." class="required"/>
+	</div>
+
+<!-- input type user inputs store -->
+	<div data-role="fieldcontain">
+		<label for="store">Store:</label>
+		<input type="text" name="store" id="store" placeholder="Ex: Guitar Center, Sam Ash, etc." class="required"/>
+	</div>
+
+<!-- range type user picks rating -->
+	<div data-role="fieldcontain">
+		<label for="rating">Rating:</label>
+		<input type="range" name="rating" id="rating" value="5" min="1" max="10"/>
+	</div>
+	
+	<!--<div data-role="fieldcontain"> DROP DOWN SELECTOR.
+		
+		<label for="style">Style</label>
+		<select name="style" id="style" data-native-menu="false">
+			<option value="standard">Basic Model</option>
+			<option value="custom">Custom Model</option>
+			<option value="vintage">Vintage Model</option>
+			
+		</select>
+	</div>-->
+
+<!-- check box type user chooses any accesories-->
+	<div data-role="fieldcontain">
+		<fieldset data-role="controlgroup">
+			<legend>Accesories <small><em>(Add to Guitar Value)</em></small></legend>
+			<input type="checkbox" value="tuner" name="booty-role" id="tuner" checked="checked"/>
+			<label for="tuner">Tuner</label>
+			<input type="checkbox" value="cables" name="booty-role" id="cables"/>
+			<label for="cables">Cables</label>
+			<input type="checkbox" value="picks" name="booty-role" id="picks"/>
+			<label for="picks">Picks</label>
+			<input type="checkbox" value="strings" name="booty-role" id="strings"/>
+			<label for="strings">Strings</label>
+		</fieldset>
+	</div>	
+
+<!-- dropdown -->
+	<div data-role="fieldcontain">
+		<label for="pickups">Pick Ups <small><em>(POP Window)</em></small></label>
+		<select name="pickups" id="pickups" data-native-menu="false">
+			<option data-placeholder="true">Recommended Pick Ups</option>
+			<optgroup label="Active Pick Ups">
+				<option value="pu1">EMG</option>
+				<option value="pu2">DMustain</option>
+				<option value="pu3">Schecter</option>
+			</optgroup>
+			<optgroup label="Passive Pick Ups">
+				<option value="pu4">Kremona</option>
+				<option value="pu5">Fishman</option>
+				<option value="pu6">Seymour Duncan</option>
+			</optgroup>
+		</select>
+	</div>
+
+<!-- dropdown type user chooses what color to chose -->
+	<div data-role="fieldcontain">
+		<label for="color">Choose Color <small><em>(POP Menu)</em></small></label>
+		<select name="color" id="color" data-native-menu="false">
+			<option data-placeholder="true">Color</option>
+			<optgroup label="Available Colors">
+				<option value="color1">Black</option>
+				<option value="color2">Red</option>
+				<option value="color3">White</option>
+				<option value="color4">Green</option>
+				<option value="color5">Blue</option>
+			</optgroup>
+
+		</select>
+	</div>
+
+<!-- radio button type user chooses what type of transaction-->
+	<div data-role="fieldcontain">
+		<fieldset data-role="controlgroup">
+			<legend>Transaction:</legend>
+			<input type="radio" value="Cash" name="currency" id="cash" checked="checked"/>
+			<label for="cash">Cash</label>
+			<input type="radio" value="Credit" name="currency" id="credit"/>
+			<label for="credit">Credit</label>
+		</fieldset>
+	</div>	
+
+<!-- coupon?-->
+<div data-role="fieldcontain">
+		<label for="coupon" id="coupon">Coupon?:</label>
+		<select data-role="slider">
+			<option value="off">Yes</option>
+			<option value="on">No</option>
+		</select>	
+	</div>	
+
+<!-- textarea type allows user to leave any additional comments in the textarea-->
+	<div data-role="fieldcontain">	
+		<label for="comments" id="comments">Comments:</label>
+		<textarea placeholder="Additional Information?"></textarea>
+	</div>
+
+<!-- reset and submit type -->
+	<div data-role="fieldcontain">
+		<input type="submit" value="Submit" id="submit" data-theme="b"/>
+		<!-- <input type="reset" value="Reset" data-theme="a"/> -->
+	</div>	
+	</form>
+
+<!-- clear stored data, display data and add item links -->
+	<a href="#" id="clear" class="bttn" >Cleared Stored Data</a>
+	<a href="#" id="displayLink" class="bttn" >Display Data</a>
+	<a href="#custform" id="addNew" style="display:none;">Add New Item</a>
+		<br />
+
+
+<!-- end of the form -->
+	</div>
+</div>
+
+
+
+	<!-- JavaScript under here -->
+
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/json.js" ></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+
+
+
+</body>
+</html>

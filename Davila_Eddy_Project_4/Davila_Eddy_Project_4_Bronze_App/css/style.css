@@ -1,0 +1,64 @@
+/* <!-- Eddy Davila -->
+<!-- CSS Selector -->
+<!-- Visual Frameworks -->
+<!-- Term 1304 --> */
+
+/*Make it look like an iPhone*/
+body{font-family: Arial, Helvetica, san-serif;width: 571px;margin: auto;padding: 10px;}
+
+
+
+h1 {
+    margin:10px 30px 20px 50px;
+    border: 1px solid #000;
+    padding: 15px 15px 15px 150px;
+    background:#84B0FA;
+    width: 50%;
+    font-family: "Times New Roman";
+    letter-spacing: 0.3em;
+    text-indent: -40px;
+}
+
+
+h2 {margin:10px 30px 20px 50px;
+    border: 1px solid #000;
+    background:#84B0FA;
+    width: 50%;
+    font-family: "Times New Roman";
+    letter-spacing: 0.3em;
+    text-indent: -40px}
+a{
+    outline: 2px double blue;
+}
+
+a:hover{color: red; outline: none;}
+
+legend {
+    border: 1px solid #000;
+    padding: 0px 0px 0px 0px;
+    background:#05CBF7;
+}
+
+ul{
+    border: 1px solid #000;
+    padding: 15px 15px 15px 30px;
+    background:#F54B38;
+}
+label {
+    display: block;
+}
+    
+li {
+    background: #B5FA07;
+    border-bottom: solid;
+    width: auto;
+}
+
+form {
+    overflow: scroll;
+}
+
+.addFocus{border: 2px solid #ff1111}
+
+
+    

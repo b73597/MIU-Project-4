@@ -1,0 +1,531 @@
+
+<!-- Eddy Davila -->
+<!-- Project 3 -->
+<!-- MIU 1305 -- >
+
+<!-- head starts -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Guitar Library</title>
+
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	 <link rel="stylesheet" href="themes/roller.css" />
+	
+	<link rel="stylesheet" href="css/jqm.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body >
+
+	<div data-role="page" id="home" >
+
+		<div data-role="content">
+			<h1><img src="images/logo.png" class="img" alt="Guitar Library"/></h1>
+			<p class="para1" style="text-shadow: none">The easiest way for salesmen to add and find guitar details.</p>
+			<h1><a href="additem.html" data-ajax="false"><img src="images/cta.png" class="mycta" alt="Add Guitar!" /></a></h1>
+		<form action="#" method="post" id="contactForm">
+			<input type="search" size="35" placeholder="Find Guitar" class="buttn">
+			<input type="submit" value="Search" class="button" data-theme="e">
+		</form>
+			<p class="para1" style="text-shadow: none">Browse by</p>
+
+		<!-- category section goes here -->	
+		<a href="#updates" data-role="button" data-icon="plus" >Updates</a>
+		<a href="#guitarname" data-role="button" data-icon="plus" >Guitar Name</a>
+		<a href="#details" data-role="button" data-icon="plus" >Details</a>
+		<a href="#clientname" data-role="button" data-icon="plus" ">Client Name</a>
+		<a href="#inventory" data-role="button" data-icon="plus" >Inventory</a>
+
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="plus">Home</a></li>
+						<li><a href="#about" data-icon="plus">About</a></li>
+						<li><a href="additem.html" data-ajax="false" data-icon="plus">Add Guitar</a></li>
+					</ul>	
+				</div>
+			</div>
+	</div>
+
+<!-- Client section goes here -->
+
+	<div data-role="page" id="clientname" data-add-back-btn="true"  >
+
+			<div data-role="header" data-position="fixed">
+				<h1>Clients</h1>
+			</div>
+
+			<div data-role="content">
+				<!-- data -->
+				<ul data-role="listview" data-inset="true" data-filter="true">
+					<li>
+						<a href="#">	
+							<h3>A - J</h3>
+						</a>	
+					</li>
+					<li>
+						<a href="#">	
+							<h3>K - T</h3>
+						</a>	
+					</li>
+					<li>
+						<a href="#">	
+							<h3>U - Z</h3>
+						</a>	
+					</li>
+				</ul>
+			</div>
+
+			<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="plus">Home</a></li>
+						<li><a href="#about" data-icon="plus">About</a></li>
+						<li><a href="additem.html" data-ajax="false" data-icon="plus">Add Guitar</a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+
+		<!-- gallery section goes here -->
+
+
+	<div data-role="page" id="inventory" data-add-back-btn="true" >
+
+			<div data-role="header" data-position="fixed">
+							<h1>Inventory</h1>
+			</div>
+
+			<div data-role="content" >
+				<!-- data -->
+				<div class="ui-grid-b">
+					<!-- gallery grid content images -->
+
+					<div class="ui-block-a"><div class="ui-bar ui-bar-a"><img src="images/gallery/inv1.png" /></div></div>
+					<div class="ui-block-b"><div class="ui-bar ui-bar-a"><img src="images/gallery/inv2.png" /></div></div>
+					<div class="ui-block-c"><div class="ui-bar ui-bar-a"><img src="images/gallery/inv3.png" /></div></div>
+					<div class="ui-block-a"><div class="ui-bar ui-bar-a"><img src="images/gallery/inv4.png" /></div></div>
+					<div class="ui-block-b"><div class="ui-bar ui-bar-a"><img src="images/gallery/inv5.png" /></div></div>
+					<div class="ui-block-c"><div class="ui-bar ui-bar-a"><img src="images/gallery/inv6.png" /></div></div>
+					<div class="ui-block-a"><div class="ui-bar ui-bar-a"><img src="images/gallery/inv7.png" /></div></div>
+					<div class="ui-block-b"><div class="ui-bar ui-bar-a"><img src="images/gallery/inv8.png" /></div></div>
+					<div class="ui-block-c"><div class="ui-bar ui-bar-a"><img src="images/gallery/inv9.png" /></div></div>
+					<div class="ui-block-a"><div class="ui-bar ui-bar-a"><img src="images/gallery/inv10.png" /></div></div>
+					<div class="ui-block-b"><div class="ui-bar ui-bar-a"><img src="images/gallery/inv11.png" /></div></div>
+					<div class="ui-block-c"><div class="ui-bar ui-bar-a"><img src="images/gallery/inv12.png" /></div></div>
+
+				</div>
+			</div>
+
+			<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="plus">Home</a></li>
+						<li><a href="#about" data-icon="plus">About</a></li>
+						<li><a href="additem.html" data-ajax="false" data-icon="plus">Add Guitar</a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+
+<!-- Guitar name section goes here -->
+
+	<div data-role="page" id="guitarname" data-add-back-btn="true" >
+
+			<div data-role="header" data-position="fixed">
+				<h1>Guitar Names</h1>
+
+			</div>
+
+			<div data-role="content">
+				<!-- data -->
+				<div data-role="collapsible-set" >
+						<div data-role="collapsible" data-collapsed="true" data-theme="a">
+							<h3>Ibanez</h3>
+							<h1><img src="images/guitarnames/ibanezlogo.png" alt="Ibanez Guitars" class="img"/></h1>
+							<p class="para1" style="text-shadow: none">
+								<strong>Ibanez Guitars</strong><br />
+								East Coast Dealer<br />
+								201-608-3323<br />
+
+								<a href="http://www.guitarcenter.com/" data-role="button" data-theme="b">Website</a>
+							</p>
+						</div>
+
+						<div data-role="collapsible" data-collapsed="true" data-theme="a">
+							<h3>Gibson</h3>
+							<h1><img src="images/guitarnames/gibsonlogo.png" alt="Gibson Guitars" class="img"/></h1>
+							<p class="para1" style="text-shadow: none"><strong>Gibson Guitars</strong><br />
+								East Coast Dealer<br />
+								201-608-3323<br />
+
+								<a href="http://www.guitarcenter.com/" data-role="button" data-theme="b">Website</a>
+							</p>
+							</p>
+						</div>
+
+						<div data-role="collapsible" data-collapsed="true" data-theme="a">
+							<h3>Fender</h3>
+							<h1><img src="images/guitarnames/fenderlogo.png" alt="Fender Guitars" class="img"/></h1>
+							<p class="para1" style="text-shadow: none">
+								<strong>Fender Guitars</strong><br />
+								East Coast Dealer<br />
+								201-608-3323<br />
+
+								<a href="http://www.guitarcenter.com/" data-role="button" data-theme="b">Website</a>
+							</p>
+							</p>
+						</div>
+						<div data-role="collapsible" data-collapsed="true" data-theme="a">
+							<h3>BC Rich</h3>
+							<h1><img src="images/guitarnames/bclogo.png" alt="BC Rich" class="img"/></h1>
+							<p class="para1" style="text-shadow: none">
+								<strong>BC Rich Guitars</strong><br />
+								East Coast Dealer<br />
+								201-608-3323<br />
+
+								<a href="http://www.guitarcenter.com/" data-role="button" data-theme="b">Website</a>
+							</p>
+							</p>
+						</div>
+						<div data-role="collapsible" data-collapsed="true" data-theme="a">
+							<h3>Dean</h3>
+							<h1><img src="images/guitarnames/deanlogo.png" alt="Dean Guitars" class="img"/></h1>
+							<p class="para1" style="text-shadow: none"><strong>Dean Guitars</strong><br />
+								East Coast Dealer<br />
+								201-608-3323<br />
+
+								<a href="http://www.guitarcenter.com/" data-role="button" data-theme="b">Website</a>
+							</p>
+
+							</p>
+						</div>
+
+						<div data-role="collapsible" data-collapsed="true" data-theme="a">
+							<h3>Jackson</h3>
+							<h1><img src="images/guitarnames/jacksonlogo.png" alt="Jackson Guitars" class="img"/></h1>
+							<p class="para1" style="text-shadow: none">
+								<strong>Jackson Guitars</strong><br />
+								East Coast Dealer<br />
+								201-608-3323<br />
+
+								<a href="http://www.guitarcenter.com/" data-role="button" data-theme="b">Website</a>
+							</p>
+							</p>
+						</div>
+				</div>
+			</div>
+
+			<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="plus">Home</a></li>
+						<li><a href="#about" data-icon="plus">About</a></li>
+						<li><a href="additem.html" data-ajax="false" data-icon="plus">Ad Guitar</a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+
+<!-- Details section goes here -->
+
+	<div data-role="page" id="details" data-add-back-btn="true" >
+
+			<div data-role="header" data-position="fixed">
+				<h1>Guitar Details</h1>
+			</div>
+
+			<div data-role="content">
+				<!-- data -->
+				<ul data-role="listview" data-filter="true" data-inset="true" data-theme="c">
+					<li>
+						<a href="#">	
+							<img src="images/details/JEM7V.png" class="imgnews"/>
+							<h3>Ibanez JEM7V</h3>
+							<p>
+
+Specifications:
+Neck: 5pc Maple/Walnut Prestige neck 
+Body: Alder body 
+Fingerboard: Rosewood fingerboard 
+Bridge: Edge bridge 
+Neck pu: DiMarzio Evolution(H) neck pu 
+Mid pu: DiMarzio Evolution(S) mid pu 
+Bridge pu: DiMarzio Evolution(H) bridge pu 
+Hardware color Gold.</p>
+						</a>	
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/details/PGM300.png" />
+							<h3>Fender PGM300 </h3>
+							
+
+						</a>	
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/details/S7320.png"/>							
+							<h3>BC Rich S7320</h3>
+							<p>The Ibanez S7320 Guitar is a 7-string electric with a body that's thin around the sides for comfort and thick around the pickups for tone. It sports a super strong maple and walnut 5-ply neck that's a dream to play. The ZR tremolo bridge uses ball bearings for frictionless arming and fast return. The pickups are rocking Ibanez AH for 7-string humbuckers.
+Ibanez S7320 7-String Electric Guitar Features:
+Ibanez ZR 7-string tremolo bridge
+Maple/walnut 5-ply neck.</p>
+
+						</a>	
+					</li>
+				</ul>
+			</div>
+
+			<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="plus">Home</a></li>
+						<li><a href="#about" data-icon="plus">About</a></li>
+						<li><a href="additem.html" data-ajax="false" data-icon="plus">Add Guitar</a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>		
+
+<!-- updates section goes here -->
+
+
+	<div data-role="page" id="updates" data-add-back-btn="true" data-theme="a" >
+
+			<div data-role="header" data-position="fixed">
+				<h1>Updates</h1>
+			</div>
+<!-- content goes here --> 
+
+			<div data-role="content">
+				<!-- data -->
+				<ul data-role="listview" data-inset="true" data-filter="true" data-theme="c">
+					<li>
+						<a href="#updates_details">	
+							<img src="images/guitarnames/jacksonlogo.png" />
+							<h3>Jackson Guitars </h3>
+							<p>Jackson Guitars, to confirm merge with Martin Acustics in 2015</p>
+							<p><em>monday, may 13, 2013</em></p>
+						</a>	
+					</li>
+					<li>
+						<a href="#updates_details">	
+							<img src="images/guitarnames/gibsonlogo.png" />
+							<h3>Gibson Guitars</h3>
+							<p>Gibson Guitars will endorse Erick Clapton in the  "CrossRoads Tour"</p>
+							<p><em>Sunday, may 12, 2013</em></p>
+
+						</a>	
+					</li>
+					<li>
+						<a href="#updates_details">	
+							<img src="images/guitarnames/bclogo.png"/>							
+							<h3>BC Rich</h3>
+							<p>Kerry King's custom made Axe Guitar will be for sale this weekend. </p>
+							<p><em>Saturday, may 11, 2013</em></p>
+
+						</a>	
+					</li>
+					<li>
+						<a href="#updates_details">	
+							<img src="images/guitarnames/ibanezlogo.png"/>							
+							<h3>Ibanez </h3>
+							<p>EMG Announces: James Hetfield signature pick ups for sale in August 2013</p>
+							<p><em>Friday, may 10, 2013</em></p>
+
+						</a>	
+					</li>
+				</ul>
+			</div>
+<!-- footer starts -->
+			<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="plus">Home</a></li>
+						<li><a href="#about" data-icon="plus">About</a></li>
+						<li><a href="additem.html" data-ajax="false" data-icon="plus">Add Guitar</a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>		
+
+<!-- update details one window drill down starts here for the news section -->
+
+<div data-role="page" id="updates_details" data-add-back-btn="true" data-theme="a">
+
+			<div data-role="header" data-position="fixed">
+							<h1>Updates</h1>
+							
+
+			</div>
+<!-- content goes here --> 
+
+			<div data-role="content">
+				<!-- data -->	
+					<img src="images/news/updates.png" />
+					<h3>Guitar Updates 2013</h3>
+					<p style="text-shadow: none">All news and updates related to your favorite brands can be found here.</p>
+			</div>
+<!-- footer starts -->
+			<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home"data-icon="plus">Home</a></li>
+						<li><a href="#about"data-icon="plus">About</a></li>
+						<li><a href="additem.html" data-ajax="false" data-icon="plus">Add Guitar</a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>				
+
+<!-- about section goes here -->
+
+
+	<div data-role="page" id="about" data-add-back-btn="true" data-theme="a" >
+
+			<div data-role="header" data-position="fixed">
+				<h1>About</h1>
+			</div>
+<!-- content goes here --> 
+
+			<div data-role="content">
+
+				<!-- data -->
+				<a href="#credits"data-role="button" data-icon="plus" data-theme="b">Credits</a>
+				<a href="#author" data-role="button" data-icon="plus" data-theme="b">Author Info</a>
+				<a href="http://http://b73597.github.io/Mobile-Interfaces---Usability" data-role="button" data-icon="plus" data-theme="b">Bronze App</a>
+				<a href="https://github.com/b73597/Mobile-Interfaces---Usability/tree/gh-pages/Project_2/Davila_Eddy_Project_2_Gold_App" data-role="button" data-icon="plus" data-theme="b">Gold gh-pages</a>
+				<a href="https://github.com/b73597/Mobile-Interfaces---Usability/tree/gh-pages/Project_2/Davila_Eddy_Project_2_Bronze_App" data-role="button" data-icon="plus" data-theme="b">Bronze gh-pages</a>
+				<a href="https://github.com/b73597/Mobile-Interfaces---Usability" data-role="button" data-icon="plus" data-theme="b">GitHub Repository</a>
+		
+			</div>
+			
+			
+<!-- footer starts -->
+			<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="plus">Home</a></li>
+						<li><a href="#about" data-icon="plus" class="ui-btn-active">About</a></li>
+						<li><a href="additem.html" data-ajax="false" data-icon="plus">Join</a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+	
+	
+	<!-- credits section goes here -->
+
+
+	<div data-role="page" id="credits" data-add-back-btn="true" data-theme="a" >
+
+			<div data-role="header" data-position="fixed">
+				<h1>Credits</h1>
+			</div>
+<!-- content goes here --> 
+
+			<div data-role="content">
+				<!-- data -->
+				<ul data-role="listview" data-inset="true" data-filter="true" data-theme="c">
+					<li>
+						<a href="http://www.fullsail.edu">	
+							<h3>Credited Source </h3>
+							<p>Full Sail University</p>
+							<p><em>Mobile Interfaces and Usability</em></p>
+						</a>	
+					</li>
+					<li>
+						<a href="http://www.lynda.com">	
+							<h3>Credited Source</h3>
+							<p>Tutorials and videos from www.lynda.com</p>
+
+						</a>	
+					</li>
+					<li>
+						<a href="http://www.youtube.com">	
+							<h3>Credited Source</h3>
+							<p>Tutorials and videos from www.youtube.com</p>
+
+						</a>	
+					</li>
+					<li>
+						<a href="http://www.jtidwell.net">	
+							<h3>Credited Source</h3>
+							<p>Study materials: Designing Interfaces by Jenifer Tidwell</p>
+
+						</a>		
+					</li>
+				</ul>
+			</div>
+<!-- footer starts -->
+			<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="plus">Home</a></li>
+						<li><a href="#about" data-icon="plus">About</a></li>
+						<li><a href="additem.html" data-ajax="false" data-icon="plus">Add Guitar</a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+	
+	
+	<!-- Author Details-->
+	
+	<div data-role="page" id="author" data-add-back-btn="true" data-theme="b" >
+
+			<div data-role="header" data-position="fixed">
+				<h1>Credits</h1>
+			</div>
+<!-- content goes here --> 
+
+			<div data-role="content">
+				<!-- data -->
+				<ul data-role="listview" data-inset="true" data-filter="true">
+					<li>
+						<a>	
+							<h3>Author Info</h3>
+							<p>Eddy Davila</p>
+							<p><em>MIU student at Full Sail University</em></p>
+						</a>	
+					</li>
+				</ul>
+			</div>
+<!-- footer starts -->
+			<div data-role="footer" data-position="fixed" data-id="home">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="plus">Home</a></li>
+						<li><a href="#about" data-icon="plus">About</a></li>
+						<li><a href="additem.html" data-ajax="false" data-icon="plus">Add Guitar</a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>		
+
+	<!-- JavaScript under here -->
+
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

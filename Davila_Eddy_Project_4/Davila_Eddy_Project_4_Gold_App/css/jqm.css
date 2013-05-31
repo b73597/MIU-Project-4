@@ -1,0 +1,22 @@
+input.placeholder{
+	color:red;
+}
+#custerrorlink{display:none;}
+
+label.error{
+	display: block;
+	margin:10px 0;
+	color: #cc0000;
+}
+#inventory .ui-grid-b div{}
+
+#inventory .ui-grid-b .ui-bar {
+	margin: 5px;
+	padding: 5px;
+}
+#updates img {
+	padding: 10px;
+}
+#updates_details .newswin {
+	color: #99ccff;
+}
